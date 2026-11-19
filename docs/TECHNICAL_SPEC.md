@@ -1,7 +1,7 @@
 # Ayonikah-app — Spesifikasi Teknis
 
-Status: **kontrak baseline v1.0**  
-Stack: Next.js 15 + TypeScript, FastAPI + Pydantic, SQLite 3  
+Status: **kontrak baseline v1.0**
+Stack: Next.js 15 + TypeScript, FastAPI + Pydantic, SQLite 3
 Scope: wedding planner single-user lokal; autentikasi dan multi-tenant belum termasuk.
 
 Dokumen ini menjadi batas implementasi worker. Perubahan kontrak wajib menaikkan versi dan memperbarui test backend/frontend.
