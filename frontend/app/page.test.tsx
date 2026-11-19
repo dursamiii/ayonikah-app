@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import Home from './page';
 import { api, type Plan } from '@/lib/api';
 
-vi.mock('@/lib/api', () => ({ api: { list: vi.fn(), create: vi.fn(), update: vi.fn(), remove: vi.fn() } }));
+vi.mock('@/lib/api', () => ({ mediaUrl: (url: string | null) => url, api: { list: vi.fn(), create: vi.fn(), update: vi.fn(), remove: vi.fn(), uploadImage: vi.fn(), removeImage: vi.fn() } }));
 const plan: Plan = { id: 1, title: 'Book the garden', category: 'Venue', status: 'todo', event_date: null, notes: '', image_url: 'https://example.com/garden.jpg', created_at: '', updated_at: '' };
 afterEach(() => { cleanup(); vi.clearAllMocks(); });
 

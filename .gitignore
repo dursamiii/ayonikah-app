@@ -19,16 +19,33 @@ venv/
 .mypy_cache/
 .ruff_cache/
 
-# SQLite
+# Build output
+build/
+dist/
+.next/
+out/
+coverage/
+.cache/
+.turbo/
+
+# SQLite and uploaded runtime data
 db.sqlite3
 *.sqlite
 *.sqlite3
 *.db
+backend/uploads/
 
 # Environment and secrets
 .env
 .env.*
 !.env.example
+*.secret
+*.pem
+*.key
+secrets/
+
+# QA artifacts
+/dogfood-output/
 
 # OS / editor
 .DS_Store
